@@ -1,0 +1,81 @@
+:root {
+    --primary-bg-color: #222222;
+    --secondary-bg-color: #444444;
+    --tertiary-bg-color: #666666;
+    --primary-color: #8c17c9;
+    --secondary-color: #8147c2;
+}
+
+.accordion {
+    background-color: var(--primary-bg-color)
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #555; 
+}
+
+.panel {
+  padding: 0 18px;
+  margin-bottom: 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.tag {
+    border-radius: 8px;
+}
+
+.sidebar {
+    background-color:var(--primary-bg-color)!important;
+}
+.card {
+    border-radius: 10px;
+    color: white!important;
+    background-color: var(--primary-bg-color)!important;
+}
+
+.card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.slider{
+    color: var(--primary-color);
+    background-color: var(--tertiary-bg-color);
+}
+
+.slider div{
+    height:24px;
+    color: white;
+    background-color: var(--secondary-color)!important;
+}
+
+.primary-btn{
+    color: white;
+    background-color: var(--primary-color)!important;
+}
+
+.primary {
+    color: white;
+    background-color: var(--primary-color)!important;
+}
+.primary-text{
+    color: var(--primary-color)!important;
+}
+
+.secondary {
+    color: white;
+    background-color: var(--secondary-color)!important;
+}
+.secondary-text{
+    color: var(--secondary-color)!important;
+}

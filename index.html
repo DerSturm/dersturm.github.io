@@ -1,10 +1,207 @@
 <!DOCTYPE html>
-<meta>
 <html>
-<head>
-	
-</head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    body{background-color: #121212}
+</style>
 <body>
-	<h1>Portfolio</h1>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-text-grey w3-card-4 card">
+        <div class="w3-display-container">
+          <img src="assets/images/portrait.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2>Hannes Sturm</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large secondary-text"></i>Ludwigsburg, Germany</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large secondary-text"></i>sturm.hannes@outlook.de</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large secondary-text"></i>+49 </p>
+        </div>
+      </div><br>
+        
+        <div class="w3-container w3-card card w3-margin-bottom">
+        <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge"></i>Skills</h2>
+        <div class="w3-container">
+            
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right secondary-text"></i>Skills</b></p>
+            <button class="accordion w3-text-white">Programming Languages 
+              <br> <span class="w3-tag w3-small tag secondary">C#</span>
+              <span class="w3-tag w3-small tag secondary">C++</span>
+              <span class="w3-tag w3-small tag secondary">Java</span>
+              <span class="w3-tag w3-small tag secondary">Python</span>
+          </button>
+          <div class="w3-small panel">
+              <p>Java</p>
+              <div class="slider w3-round-xlarge ">
+                <div class="w3-round-xlarge" style="width:90%"></div>
+              </div>
+              <p>C#</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width:80%"></div>
+              </div>
+              <p>C++</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width:50%"></div>
+              </div>
+              <p>Python</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width:40%"></div>
+              </div>
+          </div>
+          <button class="accordion w3-text-white">Game Engines
+                <br> <span class="w3-tag w3-small tag secondary">Unity</span>
+              <span class="w3-tag w3-small tag secondary">Unreal Engine</span>
+          </button>
+          <div class="w3-small panel">
+              <p>Unity</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width:60%"></div>
+              </div>
+              <p>Unreal Engine</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width:10%"></div>
+              </div>
+          </div>
+            <button class="accordion w3-text-white">3D Software
+                <br> <span class="w3-tag w3-small tag secondary">Blender</span>
+            </button>
+          <div class="w3-small panel">
+              <p>Blender</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width:60%"></div>
+              </div>
+          </div>
+        <hr>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right secondary-text"></i>Languages</b></p>
+          <p>German</p>
+          <div class="slider w3-round-xlarge">
+            <div class="w3-round-xlarge secondary" style="width:100%;"></div>
+          </div>
+          <p>English</p>
+          <div class="slider w3-round-xlarge">
+            <div class="w3-round-xlarge secondary" style="width:90%"></div>
+          </div>
+          <p>Japanese</p>
+          <div class="slider w3-round-xlarge">
+            <div class="w3-round-xlarge secondary" style="width:20%"></div>
+          </div>
+          <br>
+        </div>
+            <div class="w3-center"><p><button class="w3-button w3-padding-large w3-margin-top w3-margin-bottom  primary-btn">Download Resume</button></p></div>
+            
+      </div> 
+    <!-- End Left Column -->
+    </div> 
+
+    <!-- Right Column -->
+    <div class="w3-twothird"> 
+
+        
+      <div class="w3-white w3-card w3-margin-bottom card">
+        <div class="w3-display-container">
+          <img src="assets/images/banner.png" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>About</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p>As a student of media computer science I have a good theoretical and mathematical background on
+            topics such as computer graphics, 3D rendering, animation and editing. In my spare time, I deal
+            with the practical aspects of these topics almost daily and teach myself new skills, mostly using the
+            free software Blender, Unity and more recently Unreal Engine 4.</p>
+        </div>
+      </div>
+        
+      <div class="w3-container w3-card w3-white w3-margin-bottom card">
+        <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Internship / Dr. Ing. h.c. F. Porsche AG</b></h5>
+          <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>Nov 2021 - <span class="w3-tag secondary tag">Current</span></h6>
+          <p>Web-development using Angular. Cloud-based application.</p>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom card">
+        <h2 class="w3-padding-16"><i class=" w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Eberhard Karls University Tübingen</b></h5>
+          <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>2018 - 2021</h6>
+          <p>Bachelor Degree: Media Computer Science</p>
+          <hr>
+        </div>
+      </div>
+        
+    <!-- Contact section -->
+  <div class="w3-container w3-card w3-white w3-margin-bottom card">
+    <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Contact</h2>
+      <div class="w3-container"><p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-margin-bottom primary-btn">Send Message</button> 
+          </form></div>
+      </div>
+           
+
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-center w3-margin-top secondary">
+  <p>Find me on social media.</p>
+  <a href="https://www.instagram.com/sturmi.art/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/hannes-sturm/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+</footer>
+
 </body>
+    
+    <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+              });
+            }
+        </script>
 </html>
