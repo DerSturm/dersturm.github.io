@@ -148,7 +148,9 @@
     color: white;
     background-color: var(--secondary-color)!important;
 }
-
+.text-primary{
+    color: var(--primary-color)!important;
+}
 .button-primary{
     color: white;
     background-color: var(--primary-color)!important;
