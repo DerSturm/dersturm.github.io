@@ -15,6 +15,34 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+<!-- Navbar (sit on top) -->
+<div class="top-bar">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button button-tertiary w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button button-tertiary"><i class="fa fa-th"></i> CV</a>
+      <a href="#work" class="w3-bar-item w3-button button-tertiary"><i class="fa fa-th"></i> WORK</a>
+      <a href="#contact" class="w3-bar-item w3-button button-tertiary"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -157,7 +185,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <p>As a student of media computer science I have a good theoretical and mathematical background on
             topics such as computer graphics, 3D rendering, animation and editing. In my spare time, I deal
             with the practical aspects of these topics almost daily and teach myself new skills, mostly using the
-            free software Blender, Unity and more recently Unreal Engine 4.</p>
+            free software Blender, Unity and more recently Unreal Engine 4.
+            Thus, I am able to understand the workflows and demands of the artists I work with.</p>
         </div>
       </div>
         
@@ -176,10 +205,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                   <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>Oct 2020 - Mar 2021</h6>
               </div>
                <div style="flex-grow: 5">
-                  <div class="w3-center"><p><a href="https://corehunter.de" class="w3-button button-secondary w3-padding-large"><i class="fas fa-external-link-alt"></i>Visit Website</a></p></div>
+                  <div class="w3-center"><p>
+                      <a href="https://corehunter.de" class="w3-button button-secondary w3-padding-large"><i class="fas fa-external-link-alt"></i>Visit Website</a>
+                      <a href="https://corehunter.de" class="w3-button button-secondary w3-padding-large"><i class="fas fa-external-link-alt"></i>Watch the trailer</a>
+                  </p></div>
                </div>
           </div>
-          <p>Development of a 2D jump-and-run puzzle game. I was responsible for VFX, Lighting and Gameplay-programming.</p>
+          <p>Development of a 2D jump-and-run puzzle game using Unity. I was responsible for VFX, Lighting and Gameplay-programming.</p>
               
         </div>
       </div>

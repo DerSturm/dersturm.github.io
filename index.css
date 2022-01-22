@@ -7,6 +7,11 @@
     --secondary-color: #8147c2;
 }
 
+.top-bar{
+    color: white;
+    background-color: var(--tertiary-bg-color);
+}
+
 .accordion {
     background-color: var(--primary-bg-color)
     cursor: pointer;
@@ -170,6 +175,10 @@
 }
 .button-secondary i, .button-primary i {
     margin-right: 10px;
+}
+.button-tertiary:hover{
+    color: white!important;
+    background-color: var(--primary-color)!important;
 }
 
 .primary {
