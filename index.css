@@ -8,6 +8,7 @@
 }
 
 .top-bar{
+    height: 5rem;
     color: white;
     background-color: var(--tertiary-bg-color);
 }
@@ -55,7 +56,7 @@
 }
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 16px;
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    body{background-color: #121212}
+</style>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<!-- Navbar (sit on top) -->
+<div class="top-bar">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button button-tertiary w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button button-tertiary"><i class="fa fa-th"></i> CV</a>
+      <a href="#work" class="w3-bar-item w3-button button-tertiary"><i class="fa fa-th"></i> WORK</a>
+      <a href="#contact" class="w3-bar-item w3-button button-tertiary"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+        
+        <div class="w3-container w3-card card w3-margin-bottom">
+        <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge"></i>Filters</h2>
+        <div class="w3-container">
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right secondary-text"></i>Software</b></p>
+            <p>Programming Languages 
+              <br> <span class="w3-tag w3-small tag secondary">C#</span>
+              <span class="w3-tag w3-small tag secondary">C++</span>
+              <span class="w3-tag w3-small tag secondary">Java</span>
+              <span class="w3-tag w3-small tag secondary">Python</span>
+          </p>
+          <p>Game Engines
+                <br> <span class="w3-tag w3-small tag secondary">Unity</span>
+              <span class="w3-tag w3-small tag secondary">Unreal Engine</span>
+          </p>
+            <p>3D Software
+                <br> <span class="w3-tag w3-small tag secondary">Blender</span>
+            </p>
+            <p>Tools
+                <br> <span class="w3-tag w3-small tag secondary">QT</span>
+                <span class="w3-tag w3-small tag secondary">Angular</span>
+            </p>
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right secondary-text"></i>Other topics</b></p>
+              <span class="w3-tag w3-small tag secondary">CGI</span>
+              <span class="w3-tag w3-small tag secondary">Rendering</span>
+        <hr>
+          <br>
+        </div>
+            <div class="w3-center"><p><button class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-primary" href="/Portfolio/assets/docs/MonitorLightstage_BA_HS.pdf" download><i class="fa fa-download"></i>Download Resume</button></p></div>
+            
+      </div> 
+    <!-- End Left Column -->
+    </div> 
+
+    <!-- Right Column -->
+    <div class="w3-twothird"> 
+        
+         <!-- Slide show 1 -->
+        <div class="w3-container w3-card w3-white w3-margin-bottom card">
+        <div class="w3-container">
+            <h2 class="w3-padding-16">Monitor-based lightstage
+             <div>
+                <span class="w3-tag w3-small tag secondary">Rendering</span>
+                 <span class="w3-tag w3-small tag secondary">Computer Graphics</span>
+                 <span class="w3-tag w3-small tag secondary">Research</span>
+                 <span class="w3-tag w3-small tag secondary">Shading</span>
+                <span class="w3-tag w3-small tag secondary">CGI</span>
+                <span class="w3-tag w3-small tag secondary">C++</span>
+                 <span class="w3-tag w3-small tag secondary">QT</span>
+            </div> </h2>
+        </div>
+            
+        <div class="w3-container">
+          <div>
+            <img src="assets/images/lightstage_front-finished.jpg" style="width:100%">
+              <h3 class="w3-padding-16">Summary</h3>
+                <p>For my Bachelor thesis, I designed, built, programmed, tested and evaluated a monitor-based lightstage. It is used to acquire surface information of an object in order to re-illuminate it digitally.<br>
+                This works as follows: First, the object inside the lightstage is being illuminated by a specific illumination pattern. The object's responses to these patterns are captured by a camera.<br>
+                These responses can be used to acquire important object information such as the normal map, specularity or diffuse map.<br>
+                Finally this information can be used to re-illuminate the object by inserting all acquired maps into a render equation.<br>
+                The results are realisticly and continuously re-illuminated objects.</p>
+            <img src="assets/images/lightstage_inside.png" style="width:100%">
+              <div class="w3-center"><p>
+                  <a href="/Portfolio/assets/docs/MonitorLightstage_BA_HS.pdf" download class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-primary"><i class="fa fa-download"></i>Download Thesis (PDF)</a></p></div>
+          </div>
+        </div>
+      </div>
+        
+         <!-- Slide show 1 -->
+        <div class="w3-container w3-card w3-white w3-margin-bottom card">
+        <div class="w3-container">
+            <h2 class="w3-padding-16">Corehunter 2D Game
+             <div>
+                <span class="w3-tag w3-small tag secondary">VFX</span>
+                 <span class="w3-tag w3-small tag secondary">Gameplay Programming</span>
+                 <span class="w3-tag w3-small tag secondary">Particles</span>
+                 <span class="w3-tag w3-small tag secondary">Game Design</span>
+                <span class="w3-tag w3-small tag secondary">Lighting</span>
+                <span class="w3-tag w3-small tag secondary">Shading</span>
+                 <span class="w3-tag w3-small tag secondary">C#</span>
+                  <span class="w3-tag w3-small tag secondary">Unity</span>
+            </div> </h2>
+        </div>
+            
+        <div class="w3-container">
+          <div>
+            <img src="assets/images/coreHunter_logo_alpha.png" style="width:100%">
+              <h3 class="w3-padding-16">Summary</h3>
+                <p>As a part of a small team of 5 students, I helped creating a gravity-themed 2D action adventure puzzle game during one semester. I created most of the particle effects in the game using the Unity VFX Graph tool.<br>
+                Additionally, I created assets for light, lasers, smoke and electricity sparkles for the level designers to use. For the lights I wrote scripts to quickly change the rotation speed or the amount of flickering.<br>
+                For the electric sparks I wrote a short script to attach given 2D lights to a changeable percentage of particles, since this was not supported by Unity at that point. I also made shire that all particles respond to our gravity script to change the direction with the gravity in real-time.<br>
+                Furthermore, I designed and programmed the jetpack gameplay of the second stage in all levels.<br>
+                The game can be played without downloading it on the official website.</p>
+             <h4>Responsive Laser</h4>
+            <video width="320" autoplay muted loop>
+              <source src="/Portfolio/assets/videos/laser-demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+              <h4>Boss Save-zone</h4>
+            <video width="320" autoplay muted loop>
+              <source src="/Portfolio/assets/videos/safezone-previs.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+              <div class="w3-center"><p>
+                  <a href="https://corehunter.de" class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-secondary"><i class="fa fa-external-link"></i>Website</a>
+                  <a href="https://youtu.be/F6ol9PWm-jo" class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-secondary"><i class="fa fa-youtube-play w3-hover-opacity"></i>Watch the trailer</a>
+              </p></div>
+          </div>
+        </div>
+      </div>
+        
+        
+
+        <!-- Slide show 1 -->
+        <div class="w3-container w3-card w3-white w3-margin-bottom card">
+        <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>3D Models and renders</h2>
+        <div class="w3-container slideshow-container">
+          <div class="slideshow_3Dmodels fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="assets/images/banner.png" style="width:100%">
+                <p>Snowy mountains.</p>
+          </div>
+
+          <div class="slideshow_3Dmodels fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="assets/images/banner2.png" style="width:100%">
+                <p>In this project I tried to create realistic hair and skin.</p>
+          </div>
+
+          <div class="slideshow_3Dmodels fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="assets/images/banner3.png" style="width:100%">
+            <div class="w3-container">
+                <p>The public batchroom from the movie JOKER. I set the focus on realistic tile shaders as well as the compositing and color grading.</p>
+        </div> 
+          </div>
+            
+            <div class="slideshow_3Dmodels fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="assets/images/bike_render.png" style="width:100%">
+            <div class="w3-container">
+                <p>Procedurally generated landscape.</p>
+        </div> 
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1, 'slideshow_3Dmodels')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 'slideshow_3Dmodels')">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1, 'slideshow_3Dmodels')"></span>
+          <span class="dot" onclick="currentSlide(2, 'slideshow_3Dmodels')"></span>
+          <span class="dot" onclick="currentSlide(3, 'slideshow_3Dmodels')"></span>
+          <span class="dot" onclick="currentSlide(4, 'slideshow_3Dmodels')"></span>
+        </div>
+      </div>
+        
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-center w3-margin-top secondary">
+  <p>Find me on social media.</p>
+  <a href="https://www.instagram.com/sturmi.art/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/hannes-sturm/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+</footer>
+
+</body>
+    
+    <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+              });
+            }
+        
+        
+            var slideIndex = 1;
+            showSlides(slideIndex, "slideshow_3Dmodels");
+
+            // Next/previous controls
+            function plusSlides(n, slideshow_name) {
+              showSlides(slideIndex += n, slideshow_name);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n, slideshow_name) {
+              showSlides(slideIndex = n, slideshow_name);
+            }
+
+           function showSlides(n, slideshow_name) {
+              var i;
+              var slides = document.getElementsByClassName(slideshow_name);
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+</html>
