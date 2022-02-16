@@ -113,9 +113,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <div>
               <h3 class="w3-padding-16">Summary</h3>
                 <p>For my Bachelor thesis, I designed, built, programmed, tested and evaluated a monitor-based lightstage. It is used to acquire surface information of an object in order to re-illuminate it digitally.<br>
-                This works as follows: First, the object inside the lightstage is being illuminated by a specific illumination pattern. The object's responses to these patterns are captured by a camera.<br>
-                These responses can be used to acquire important object information such as the normal map, specularity or diffuse map.<br>
-                Finally this information can be used to re-illuminate the object by inserting all acquired maps into a render equation.<br>
+                To achive this, I first built the lightstage as a cube of 6 monitors, then I wrote a server-client-based
+                    scanning pipeline in C++ to illuminate the object by specific patterns and capture its reflectance
+                    function. These responses are further processed by the second pipeline I created, which extracts
+                    the previously mentioned surface information of the object as well as creating the final rendering
+                    of the re-illuminated object.
                 The results are realisticly and continuously re-illuminated objects.</p>
               <div class="w3-center"><p>
                   <a href="assets/docs/MonitorLightstage_BA_HS.pdf" download class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-primary"><i class="fa fa-download"></i>Download Thesis (PDF)</a></p></div>
