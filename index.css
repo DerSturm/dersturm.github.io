@@ -200,3 +200,11 @@
 .secondary-text{
     color: var(--secondary-color)!important;
 }
+
+
+.image-grid > img{
+        margin-right: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+}
