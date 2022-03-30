@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     body{background-color: #121212}
@@ -31,11 +32,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <i class="fa fa-bars"></i>
     </a>
   </div>
-    <!-- Info label-->
-    <div class="w3-bar w3-card" id="myNavbar" style="background-color: darkred">
-    Info: This page is still under construction! You might experience some bugs and some features are not implemented yet. But I am working on it!
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-  </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
@@ -44,6 +40,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
   <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
 </nav>
+    
+<div id="id01" class="w3-modal w3-animate-opacity" style="display: block;">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2>Info:</h2>
+      </header>
+      <div class="w3-container">
+        <p>This page is still under construction! You might experience some bugs and some features are not implemented yet.</p>
+      </div>
+    </div>
+  </div>
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
