@@ -71,7 +71,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
               <br> <span class="w3-tag w3-small tag secondary">C#</span>
               <span class="w3-tag w3-small tag secondary">C++</span>
               <span class="w3-tag w3-small tag secondary">Java</span>
-              <span class="w3-tag w3-small tag secondary">Typescript</span>
               <span class="w3-tag w3-small tag secondary">Python</span>
           </button>
           <div class="w3-small panel">
@@ -168,6 +167,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                     of the re-illuminated object.
                 The results are realisticly and continuously re-illuminated objects.</p>
               
+              <h4>Illumination patterns</h4>
+              <div>To illuminate the object I used Spherical Harmonics, which are orthogonal functions on the surface of a sphere which form an orthogonal basis. 
+                    They are very good for describing spherical illumination and encoding complex spherical functions as
+                    a set of individually scaled and rotated spherical harmonics</div>
+              <img class="image-grid-entry-img" src="assets/images/Lightstage/Spherical_Harmonics.png" 
+                   title="Source: Producing 3D Audio in Ambisonics - Scientific Figure on ResearchGate. Available
+                            from: https://www.researchgate.net/figure/First-16-spherical-harmonics-with-order-n-and-degreem_fig1_281559396 [accessed 24 Sep, 2021]"
+                   style="width:50%;">
+              
+              <h4>Render equation using Ward BRDF</h4>
+              <div>To test the acquired results, I developed a simple renderer based on the Ward-BRDF to distribute digital lights in the scene and relight the object.</div>
+              <img class="image-grid-entry-img" src="assets/images/Lightstage/Render_equation.png" style="width:50%; float: left" >
+              <img class="image-grid-entry-img" src="assets/images/Lightstage/Ward_BRDF.png" style="width:48%">
+              
+              <h4>Results</h4>
+              <img class="image-grid-entry-img" src="assets/images/Lightstage/Results_DiffuseSphere.png" style="width:100%; float: left">
+              
+              The following image displays the rendered diffuse sphere, virtually illuminated from different angles.
+              <img class="image-grid-entry-img" src="assets/images/Lightstage/Rotating_Lightsource.png" style="width:100%; float: left">
           </div>
         </div>
             <div class="w3-center"><p>
@@ -177,7 +195,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
          <!-- Core hunter 1 -->
         <div class="w3-container w3-card w3-white w3-margin-bottom card">
         <div class="accordion w3-container">
-            <h2 class="w3-padding-16">Corehunter (2D Game)
+            <h2 class="w3-padding-16">Corehunter
                 <i class="fa fa-chevron-down" style="float: right"></i>
              <div>
                  <span class="w3-tag w3-small tag secondary">Gameplay Programming</span>
