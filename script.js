@@ -22,18 +22,6 @@
     });
 });*/
 
-document.addEventListener("DOMContentLoaded", function () {
-    function replaceContent() {
-        fetch("nav-bar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("nav-bar").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading nav bar:", error));
-    }
-    replaceContent();
-});
-
 document.addEventListener("DOMContentLoaded", async function () {
     const carousel = document.getElementById("project-list");
     const leftBtn = document.querySelector(".left-btn");
