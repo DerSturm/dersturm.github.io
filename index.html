@@ -1,292 +1,40 @@
-<!DOCTYPE html>
-<html>
-<title>Hannes Sturm - CV</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="index.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-    body{background-color: #121212}
-</style>
-<head>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-<!-- Navbar (sit on top) -->
-<div class="top-bar">
-  <div class="w3-bar w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button button-tertiary w3-wide">HOME</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button button-primary"><i class="fa fa-th"></i> CV</a>
-      <a href="work.html" class="w3-bar-item w3-button button-tertiary"><i class="fa fa-th"></i> WORK</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium button-tertiary" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; width: 100%" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
-  <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-</nav>
-    
-<div id="id01" class="w3-modal w3-animate-opacity" style="display: block;">
-    <div class="w3-modal-content w3-card-4">
-      <header class="w3-container"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
-        class="w3-button w3-large w3-display-topright">&times;</span>
-        <h2>Info:</h2>
-      </header>
-      <div class="w3-container">
-        <p>This page is still under construction! You might experience some bugs and some features are not implemented yet.</p>
-      </div>
-    </div>
-  </div>
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-text-grey w3-card-4 card">
-        <div class="w3-display-container">
-          <img src="assets/images/portrait.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Hannes Sturm</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large secondary-text"></i>Ludwigsburg, Germany</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large secondary-text"></i>hannes.sturm@filmakademie.de</p>
-        </div>
-      </div><br>
-        
-        <div class="w3-container w3-card card w3-margin-bottom">
-        <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge"></i>Skills</h2>
-        <div class="w3-container">
-            
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right secondary-text"></i>Skills</b></p>
-            <button class="accordion w3-text-white">Programming Languages 
-                <i class="fa fa-chevron-down" style="float: right"></i>
-              <br> <span class="w3-tag w3-small tag secondary">C#</span>
-              <span class="w3-tag w3-small tag secondary">C++</span>
-              <span class="w3-tag w3-small tag secondary">Java</span>
-              <span class="w3-tag w3-small tag secondary">Typescript</span>
-              <span class="w3-tag w3-small tag secondary">Python</span>
-          </button>
-          <div class="w3-small panel">
-              <p>Java</p>
-              <div class="slider w3-round-xlarge ">
-                <div class="w3-round-xlarge" style="width:90%"></div>
-              </div>
-              <p>C#</p>
-              <div class="slider w3-round-xlarge">
-                <div class="w3-round-xlarge" style="width:80%"></div>
-              </div>
-              <p>Python</p>
-              <div class="slider w3-round-xlarge">
-                <div class="w3-round-xlarge" style="width:65%"></div>
-              </div>
-              <p>C++</p>
-              <div class="slider w3-round-xlarge">
-                <div class="w3-round-xlarge" style="width:50%"></div>
-              </div>
-          </div>
-          <button class="accordion w3-text-white">Game Engines
-              <i class="fa fa-chevron-down" style="float: right"></i>
-                <br> <span class="w3-tag w3-small tag secondary">Unity</span>
-              <span class="w3-tag w3-small tag secondary">Unreal Engine</span>
-          </button>
-          <div class="w3-small panel">
-              <p>Unity</p>
-              <div class="slider w3-round-xlarge">
-                <div class="w3-round-xlarge" style="width:60%"></div>
-              </div>
-              <p>Unreal Engine</p>
-              <div class="slider w3-round-xlarge">
-                <div class="w3-round-xlarge" style="width:10%"></div>
-              </div>
-          </div>
-            <button class="accordion w3-text-white">3D Software
-                <i class="fa fa-chevron-down" style="float: right"></i>
-                <br> <span class="w3-tag w3-small tag secondary">Blender</span>
-            </button>
-          <div class="w3-small panel">
-              <p>Blender</p>
-              <div class="slider w3-round-xlarge">
-                <div class="w3-round-xlarge" style="width:60%"></div>
-              </div>
-          </div>
-        <hr>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right secondary-text"></i>Languages</b></p>
-          <p>German</p>
-          <div class="slider w3-round-xlarge">
-            <div class="w3-round-xlarge secondary" style="width:100%;"></div>
-          </div>
-          <p>English</p>
-          <div class="slider w3-round-xlarge">
-            <div class="w3-round-xlarge secondary" style="width:90%"></div>
-          </div>
-          <p>Japanese</p>
-          <div class="slider w3-round-xlarge">
-            <div class="w3-round-xlarge secondary" style="width:20%"></div>
-          </div>
-          <br>
-        </div>
-            <div class="w3-center"><p><a  download class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-primary" disabled><i class="fa fa-download"></i>Download Resumee</a></p></div>
-            
-      </div> 
-    <!-- End Left Column -->
-    </div> 
-
-    <!-- Right Column -->
-    <div class="w3-twothird"> 
-        
-      <div class="w3-container w3-white w3-card w3-margin-bottom card">
-        <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>About</h2>
-        <div class="w3-container">
-          <p>As a student of media computer science I have a good theoretical and mathematical background on
-            topics such as computer graphics, 3D rendering, animation and editing. In my spare time, I deal
-            with the practical aspects of these topics almost daily and teach myself new skills, mostly using the
-            free software Blender, Unity and more recently Unreal Engine 4.
-            Thus, I am able to understand the workflows and demands of the artists I work with.</p>
-        </div>
-      </div>
-        
-      <div class="w3-container w3-card w3-white w3-margin-bottom card">
-        <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Dr. Ing. h.c. F. Porsche AG, Ludwigsburg</b></h5>
-          <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>Nov 2021 - Apr 2022 </h6>
-          <p>Internship: Web-development using Angular and cloud-deployment.</p>
-        </div>
-          <hr>
-          <div class="w3-container">
-          <div class="flex-container">
-              <div style="flex-grow: 1">
-                  <h5 class="w3-opacity"><b>Corehunter Game</b></h5>
-                  <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>Oct 2020 - Mar 2021</h6>
-              </div>
-               <div style="flex-grow: 5">
-                  <div class="w3-center"><p>
-                      <a href="corehunter.html" class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-secondary"><i class="fa fa-gamepad"></i>Play inside your browser</a>
-                      <a href="https://youtu.be/F6ol9PWm-jo" class="w3-button button-secondary w3-padding-large"><i class="fas fa-external-link-alt"></i>Watch the trailer</a>
-                  </p></div>
-               </div>
-          </div>
-          <p>Development of a 2D jump-and-run puzzle game using Unity. I was responsible for VFX, Lighting and Gameplay-programming.</p>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom card">
-        <h2 class="w3-padding-16"><i class=" w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-          <div class="w3-container">
-          <h5 class="w3-opacity"><b>Animationsinstitut, Filmakademie GmbH, Ludwigsburg</b></h5>
-          <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>2022 - <span class="w3-tag secondary tag">Current</span></h6>
-          <p>Diploma: Technical Directing</p>
-        </div>
-        <hr>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Eberhard Karls University, Tübingen</b></h5>
-          <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>2018 - 2021</h6>
-          <p>Bachelor Degree: Media Computer Science</p>
-        </div>
-        <hr>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Gymnasium bei St Michael, Schwäbisch Hall</b></h5>
-          <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>2018</h6>
-          <p>A-levels: specialized in art and physics</p>
-        </div>
-      </div>
-        
-    <!-- Contact section -->
-  <!--<div class="w3-container w3-card w3-white w3-margin-bottom card">
-    <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Contact</h2>
-      <div class="w3-container"><p>Do you want to work with me? Fill out the form and fill me in with the details!. </p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
-        </div>
-          <div class="w3-center">
-              <button type="submit" class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-primary"><i class="fa fa-paper-plane"></i>Send Message</button> 
-          </div>
-          </form></div>
-      </div>-->
-           
-
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-center w3-margin-top secondary">
-  <p>Find me on social media.</p>
-  <a href="https://www.instagram.com/sturmi.art/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/in/hannes-sturm/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <a href="https://github.com/DerSturm"><i class="fa fa-github w3-hover-opacity"></i></a>
-</footer>
-
-    <script>
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
-        var mySidebar = document.getElementById("mySidebar");
-
-        function w3_open() {
-          if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-          } else {
-            mySidebar.style.display = 'block';
-          }
-        }
-
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-        }
-        
-         var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-              });
-            }        
-
-    </script>
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hannes Sturm Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav id="nav-bar" class="fixed wide">
+            <a href="index.html" id="home">HANNES STURM</a>
+            <ul>
+                <li><a href="cv.html">About Me</a></li>
+                <li class="dropdown">
+                    <div>Projects</div>
+                    <ul class="dropdown-menu">
+                        <li><a href="projects-games.html">Games</a></li>
+                        <li><a href="projects-films.html">Films</a></li>
+                        <li><a href="projects-art.html">Art</a></li>
+                        <li><a href="projects-research.html">Research</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Video Banner -->
+        <header>
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="assets/videos/reel_public_v01.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </header>
+        <footer>
+            <p>&copy; 2025 Hannes Sturm</p>
+        </footer>
+    </body>
 </html>

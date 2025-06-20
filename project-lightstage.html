@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game Projects</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- JavaScript for animations -->
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav id="nav-bar" class="fixed wide">
+            <a href="index.html" id="home">HANNES STURM</a>
+            <ul>
+                <li><a href="cv.html">About Me</a></li>
+                <li class="dropdown">
+                    <div>Projects</div>
+                    <ul class="dropdown-menu">
+                        <li><a href="projects-games.html">Games</a></li>
+                        <li><a href="projects-films.html">Films</a></li>
+                        <li><a href="projects-art.html">Art</a></li>
+                        <li><a href="projects-research.html">Research</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="video-container">
+                <img src="assets/images/Lightstage/Lightstage_header.png" alt="The Deep Above" style="width: 100%" />
+                <div class="overlay-text">
+                    <h1>Monitor-based Lightstage</h1>
+                </div>
+            </div>
+        </header>
+        <div class="container w3-margin-top" style="max-width: 1400px">
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+                <!-- Left Column -->
+                <div class="w3-twothird">
+                    <div>
+                        <h2 class="w3-padding-16">Summary</h2>
+                        <p>
+                            For my Bachelor thesis, I designed, built, programmed, tested and evaluated a monitor-based
+                            lightstage. It is used to acquire surface information of an object in order to re-illuminate
+                            it digitally.<br />
+                            To achive this, I first built the lightstage as a cube of 6 monitors, then I wrote a
+                            server-client-based scanning pipeline in C++ to illuminate the object by specific patterns
+                            and capture its reflectance function. These responses are further processed by the second
+                            pipeline I created, which extracts the previously mentioned surface information of the
+                            object as well as creating the final rendering of the re-illuminated object. The results are
+                            realisticly and continuously re-illuminated objects.
+                        </p>
+
+                        <h3>Illumination patterns</h3>
+                        <div>
+                            To illuminate the object I used Spherical Harmonics, which are orthogonal functions on the
+                            surface of a sphere which form an orthogonal basis. They are very good for describing
+                            spherical illumination and encoding complex spherical functions as a set of individually
+                            scaled and rotated spherical harmonics
+                        </div>
+                        <img
+                            class="image-grid-entry-img"
+                            src="assets/images/Lightstage/Spherical_Harmonics.png"
+                            title="Source: Producing 3D Audio in Ambisonics - Scientific Figure on ResearchGate. Available
+                            from: https://www.researchgate.net/figure/First-16-spherical-harmonics-with-order-n-and-degreem_fig1_281559396 [accessed 24 Sep, 2021]"
+                            style="width: 50%" />
+
+                        <h3>Render equation using Ward BRDF</h3>
+                        <div>
+                            To test the acquired results, I developed a simple renderer based on the Ward-BRDF to
+                            distribute digital lights in the scene and relight the object.
+                        </div>
+                        <img
+                            class="image-grid-entry-img"
+                            src="assets/images/Lightstage/Render_equation.png"
+                            style="width: 50%; float: left" />
+                        <img
+                            class="image-grid-entry-img"
+                            src="assets/images/Lightstage/Ward_BRDF.png"
+                            style="width: 48%" />
+
+                        <h2>Results</h2>
+                        <img
+                            class="image-grid-entry-img"
+                            src="assets/images/Lightstage/Results_DiffuseSphere.png"
+                            style="width: 100%; float: left" />
+
+                        The following image displays the rendered diffuse sphere, virtually illuminated from different
+                        angles.
+                        <img
+                            class="image-grid-entry-img"
+                            src="assets/images/Lightstage/Rotating_Lightsource.png"
+                            style="width: 50%; float: left" />
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="w3-third">
+                    <div class="w3-container w3-card w3-margin-bottom card">
+                        <h2 class="w3-padding-16">
+                            <i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Facts (Game)
+                        </h2>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>University</b></h5>
+                            University of Tübingen
+                        </div>
+                        <hr />
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Professor</b></h5>
+                            Prof. Hendrik Lensch
+                        </div>
+                        <hr />
+                        <div class="w3-center">
+                            <p>
+                                <a
+                                    href="assets/docs/MonitorLightstage_BA_HS.pdf"
+                                    download
+                                    class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-primary"
+                                    ><i class="fa fa-download"></i>Download Thesis (PDF)</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+        <!-- End Page Container -->
+
+        <footer>
+            <p>&copy; 2025 Hannes Sturm</p>
+        </footer>
+    </body>
+</html>

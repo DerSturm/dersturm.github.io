@@ -1,110 +1,98 @@
-<!DOCTYPE html>
-<html>
-<title>Hannes Sturm - Work</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-    body{background-color: #121212}
-</style>
-<head>
+<!doctype html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="styles.css" />
+<html lang="en">
+  <head>
+    <title>Hannes Sturm - Work</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-<!-- Navbar (sit on top) -->
-<div class="top-bar">
-   <div class="w3-bar w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button button-tertiary w3-wide">HOME</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button button-tertiary"><i class="fa fa-th"></i> CV</a>
-      <a href="work.html" class="w3-bar-item w3-button button-primary"><i class="fa fa-th"></i> WORK</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium button-tertiary" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-    </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; width: 100%" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
-  <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-</nav>
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-    <!-- Left Column -->
-    <div class="w3-third">
-        <div class="w3-container w3-card card w3-margin-bottom">
-        <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge"></i>Corehunter Infos</h2>
-        <hr>
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-info fa-fw w3-margin-right secondary-text"></i>General Information:</b></p>
-          <p>Release date: 30.03.2021</p>
-          <hr>
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-gamepad fa-fw w3-margin-right secondary-text"></i>Controls Puzzle:</b></p>
-          <p>Move: 
-              A/D or 
-              <i class="fa fa-arrow-left"></i>/
-              <i class="fa fa-arrow-right"></i></p>
-        <p>Look up/down: Esc
-            W/S or 
-              <i class="fa fa-arrow-up"></i>/
-              <i class="fa fa-arrow-down"></i></p>
-          <p>Jump: space</p>
-          <p>Run: LShift</p>
-          <p>Change Gravity: 
-                Ctrl + left/right Mouse</p>
-          <p>Pause: Escape</p>
-          <br>
-        <p class="w3-large w3-text-theme"><b><i class="fa fa-gamepad fa-fw w3-margin-right secondary-text"></i>Controls Flight:  </b></p>
-          <p>Place gravity object: left mouse</p>
-          <p>Shoot: right mouse</p>
-          <p>Pause: Esc</p>
-          <br>
-        </div>
-      </div> 
-    <div class="w3-twothird" style="padding-left: 1rem">
-        
-        
-         <!-- Slide show 1 -->
-        <div class="w3-container w3-card w3-white w3-margin-bottom card">
-        <div class="w3-container">
-            <h2 class="w3-padding-16">Corehunter</h2>
-        </div>
-            
-        <iframe src="Corehunter/index.html" title="Corehunter Web"  
-          frameborder="0" scrolling="no" height="900" width=100%>
-        </iframe>
-      </div>
-        
-    </div>
-  
-    
-  
-  <!-- End Page Container -->
-</div>
-</body>
-<script>
+    <script>
     function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
+      if (mySidebar.style.display === "block") {
+        mySidebar.style.display = "none";
       } else {
-        mySidebar.style.display = 'block';
+        mySidebar.style.display = "block";
       }
     }
 
     // Close the sidebar with the close button
     function w3_close() {
-        mySidebar.style.display = "none";
+      mySidebar.style.display = "none";
     }
-</script>
+  </script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="nav-bar" class="fixed wide">
+      <a href="index.html" id="home">HANNES STURM</a>
+      <ul>
+        <li><a href="cv.html">About Me</a></li>
+        <li class="dropdown">
+          <div>Projects</div>
+          <ul class="dropdown-menu">
+            <li><a href="projects-games.html">Games</a></li>
+            <li><a href="projects-films.html">Films</a></li>
+            <li><a href="projects-art.html">Art</a></li>
+            <li><a href="projects-research.html">Research</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Page Container -->
+    <div class="w3-content container w3-margin-top" style="max-width: 1400px">
+      <!-- Left Column -->
+      <div class="w3-third">
+        <div class="w3-container w3-card card w3-margin-bottom">
+          <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge"></i>Infos</h2>
+          <hr />
+          <p class="w3-large w3-text-theme">
+            <b><i class="fa fa-info fa-fw w3-margin-right secondary-text"></i>General Information:</b>
+          </p>
+          <p>Release date: 30.03.2021</p>
+          <hr />
+          <p class="w3-large w3-text-theme">
+            <b><i class="fa fa-gamepad fa-fw w3-margin-right secondary-text"></i>Controls Puzzle:</b>
+          </p>
+          <p>Move: A/D or <i class="fa fa-arrow-left"></i>/ <i class="fa fa-arrow-right"></i></p>
+          <p>Look up/down: Esc W/S or <i class="fa fa-arrow-up"></i>/ <i class="fa fa-arrow-down"></i></p>
+          <p>Jump: space</p>
+          <p>Run: LShift</p>
+          <p>Change Gravity: Ctrl + left/right Mouse</p>
+          <p>Pause: Escape</p>
+          <br />
+          <p class="w3-large w3-text-theme">
+            <b><i class="fa fa-gamepad fa-fw w3-margin-right secondary-text"></i>Controls Flight: </b>
+          </p>
+          <p>Place gravity object: left mouse</p>
+          <p>Shoot: right mouse</p>
+          <p>Pause: Esc</p>
+          <br />
+        </div>
+      </div>
+      <div class="w3-twothird" style="padding-left: 1rem">
+        <!-- Slide show 1 -->
+        <div class="w3-container w3-card w3-margin-bottom card">
+          <div class="w3-container">
+            <h2 class="w3-padding-16">Play the game here:</h2>
+          </div>
+
+          <iframe
+            src="Corehunter/index.html"
+            title="Corehunter Web"
+            frameborder="0"
+            scrolling="no"
+            height="900"
+            width="100%">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+  </body>
+  
 </html>

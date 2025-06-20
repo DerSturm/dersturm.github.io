@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Game Title 1",
+        "description": "Brief description of gameplay mechanics and technical aspects.",
+        "image": "assets/images/Corehunter/teas1.png"
+    },
+    {
+        "title": "Game Title 2",
+        "description": "Short insight into level design, art, and innovations.",
+        "image": "assets/images/Corehunter/teas1.png"
+    },
+    {
+        "title": "Game Title 3",
+        "description": "Description highlighting unique mechanics and player experience.",
+        "image": "assets/images/Corehunter/teas1.png"
+    }
+]

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project Grid</title>
+        <link rel="stylesheet" href="styles2.css" />
+        <script>
+            function expandImage(imageId, title, description) {
+                document.getElementById("expanded-img").src = "assets/images/Projects/" + imageId + ".png";
+                document.getElementById("expanded-title").innerText = title;
+                document.getElementById("expanded-description").innerText = description;
+                document.getElementById("expanded-view").style.display = "flex";
+            }
+
+            function closeExpandedView() {
+                document.getElementById("expanded-view").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav id="nav-bar" class="fixed wide">
+            <a href="index.html" id="home">HANNES STURM</a>
+            <ul>
+                <li><a href="cv.html">About Me</a></li>
+                <li><a href="work3.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="grid">
+            <div class="project" onclick="expandImage('Cosmoss/Filmstill', 'Cosmoss', 'Multiplayer hide and seek game...')">
+                <img src="assets/images/Projects/Cosmoss/Filmstill.png" alt="Cosmoss" />
+                <div class="title">Cosmoss</div>
+            </div>
+            <div class="project" onclick="expandImage('DeepAbove/TheDeepAbove', 'The Deep Above', 'An ocean replaces the sky...')">
+                <img src="assets/images/Projects/DeepAbove/TheDeepAbove.png" alt="The Deep Above" />
+                <div class="title">The Deep Above</div>
+            </div>
+            <!-- More projects -->
+        </div>
+
+        <div id="expanded-view" class="expanded-view">
+            <div class="content">
+                <span class="close" onclick="closeExpandedView()">&times;</span>
+                <img id="expanded-img" src="" alt="" />
+                <div class="text">
+                    <h2 id="expanded-title"></h2>
+                    <p id="expanded-description"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

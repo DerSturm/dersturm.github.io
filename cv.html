@@ -1,0 +1,239 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Hannes Sturm - CV</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.querySelectorAll(".accordion").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.classList.toggle("active");
+          const panel = this.nextElementSibling;
+
+          // Close all other panels if needed
+          // document.querySelectorAll(".panel").forEach(p => {
+          //   if (p !== panel) {
+          //     p.style.maxHeight = null;
+          //   }
+          // });
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="nav-bar" class="fixed wide">
+      <a href="index.html" id="home">HANNES STURM</a>
+      <ul>
+        <li><a href="cv.html">About Me</a></li>
+        <li class="dropdown">
+          <div>Projects</div>
+          <ul class="dropdown-menu">
+            <li><a href="projects-games.html">Games</a></li>
+            <li><a href="projects-films.html">Films</a></li>
+            <li><a href="projects-art.html">Art</a></li>
+            <li><a href="projects-research.html">Research</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="container w3-margin-top" style="max-width: 1400px">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <div class="w3-container w3-margin-bottom">
+          <h1 class="w3-padding-32"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>About me</h1>
+          <div class="w3-container">
+            <p style="width: 50%; margin: auto">
+              Blending science, tech, and artistry to create immersive digital experiences.
+            </p>
+          </div>
+        </div>
+        <!-- Left Column -->
+        <div class="w3-third">
+          <div class="w3-text-grey w3-card-4 card">
+            <div class="w3-display-container">
+              <img src="assets/images/portrait.jpg" style="width: 100%" alt="Avatar" />
+              <div class="w3-display-bottomleft w3-container w3-text-white">
+                <h2>Hannes Sturm</h2>
+              </div>
+            </div>
+            <div class="w3-container">
+              <p><i class="fa fa-home fa-fw w3-margin-right w3-large secondary-text"></i>Ludwigsburg, Germany</p>
+              <p>
+                <i class="fa fa-envelope fa-fw w3-margin-right w3-large secondary-text"></i
+                >hannes@windspiel-interactive.com
+              </p>
+            </div>
+          </div>
+          <br />
+
+          <div class="w3-container w3-card card w3-margin-bottom">
+            <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge"></i>Skills</h2>
+            <div class="w3-container">
+              <p class="w3-large w3-text-theme">
+                <b>Programming Languages</b>
+              </p>
+              <p>Java</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 70%"></div>
+              </div>
+              <p>C#</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 75%"></div>
+              </div>
+              <p>Python</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 80%"></div>
+              </div>
+              <p>C++</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 50%"></div>
+              </div>
+              <hr />
+              <p class="w3-large w3-text-theme">
+                <b>Game Engines</b>
+              </p>
+              <p>Unity</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 60%"></div>
+              </div>
+              <p>Godot</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 40%"></div>
+              </div>
+              <p>Unreal Engine</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 70%"></div>
+              </div>
+              <hr />
+              <p class="w3-large w3-text-theme">
+                <b>3D Software</b>
+              </p>
+              <p>Blender</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 80%"></div>
+              </div>
+              <p>Maya</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 25%"></div>
+              </div>
+              <p>Houdini</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge" style="width: 20%"></div>
+              </div>
+              <hr />
+              <p class="w3-large w3-text-theme">
+                <b><i class="fa fa-globe fa-fw w3-margin-right secondary-text"></i>Languages</b>
+              </p>
+              <p>German</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge secondary" style="width: 100%"></div>
+              </div>
+              <p>English</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge secondary" style="width: 90%"></div>
+              </div>
+              <p>Japanese</p>
+              <div class="slider w3-round-xlarge">
+                <div class="w3-round-xlarge secondary" style="width: 20%"></div>
+              </div>
+              <br />
+            </div>
+            <div class="w3-center">
+              <p>
+                <a download class="w3-button w3-padding-large w3-margin-top w3-margin-bottom button-primary" disabled
+                  ><i class="fa fa-download"></i>Download Resumee</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+          <div class="w3-container w3-card w3-margin-bottom card">
+            <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Blossom Seeker GmbH</b></h5>
+              <h6>
+                <i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>May 2025 -
+                <span class="w3-tag secondary tag">Now</span>
+              </h6>
+              <p>Game Programming, working with Godot Engine on a large variety of tasks in this indie studio.</p>
+            </div>
+            <hr />
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Windspiel Interactive</b></h5>
+              <h6>
+                <i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>Mar 2025 -
+                <span class="w3-tag secondary tag">Now</span>
+              </h6>
+              <p>Co-Founder: Working on our own games in this indie studio.</p>
+            </div>
+            <hr />
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Porsche AG</b></h5>
+              <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>Nov 2021 - Apr 2022</h6>
+              <p>Internship: Web-development using Angular and cloud-deployment.</p>
+            </div>
+            <hr />
+          </div>
+
+          <div class="w3-container w3-card w3-margin-bottom card">
+            <h2 class="w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Animationsinstitut, Filmakademie GmbH, Ludwigsburg</b></h5>
+              <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>2022 - 2025</h6>
+              <p>Diploma: Technical Directing</p>
+            </div>
+            <hr />
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Eberhard Karls University, Tübingen</b></h5>
+              <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>2018 - 2021</h6>
+              <p>Bachelor Degree: Media Computer Science</p>
+            </div>
+            <hr />
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Gymnasium bei St Michael, Schwäbisch Hall</b></h5>
+              <h6><i class="fa fa-calendar fa-fw w3-margin-right secondary-text"></i>2018</h6>
+              <p>A-levels: specialized in art and physics</p>
+            </div>
+          </div>
+          <!-- End Right Column -->
+        </div>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+
+    <!--<footer class="w3-container w3-center w3-margin-top secondary">
+      <p>Find me on social media.</p>
+      <a href="https://www.instagram.com/sturmi.art/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/hannes-sturm/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://github.com/DerSturm"><i class="fa fa-github w3-hover-opacity"></i></a>
+    </footer>-->
+    <footer>
+      <p>&copy; 2025 Hannes Sturm</p>
+    </footer>
+  </body>
+</html>
